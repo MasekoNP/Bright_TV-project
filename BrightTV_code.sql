@@ -23,6 +23,7 @@ SELECT *
 FROM bright_learn.default.bright_tv
 LIMIT 100;
 
+--------------------------------------------------------------------------------
 -- 2. Checking for duplicates for the UserID
 -- There are duplicates UserID
 SELECT UserID,
@@ -30,8 +31,14 @@ SELECT UserID,
 FROM bright_learn.default.bright_tv
 GROUP BY UserID
 HAVING COUNT(*) > 1;
+--------------------------------------------------------------------------------
+-- 3. Distict users
+-- There are 5375 distict users
+SELECT count(DISTINCT UserID) AS unique_users
+FROM bright_learn.default.bright_tv;
 
--- 3. Checking for NULL values in all columns
+--------------------------------------------------------------------------------
+-- 4. Checking for NULL values in all columns
 -- There are no NULL values returned
 SELECT *
 FROM bright_learn.default.bright_tv
@@ -49,7 +56,8 @@ WHERE
     OR RecordDate2 IS NULL
     OR Duration2 IS NULL; 
 
--- 4. Missing values
+--------------------------------------------------------------------------------
+-- 5. Missing values
 -- 1007 count of missing names
 SELECT COUNT(*) AS missing_names 
 FROM bright_learn.default.bright_tv
@@ -103,7 +111,7 @@ FROM bright_learn.default.bright_tv
 WHERE Duration2 IN(' ','None'); 
 
 --------------------------------------------------------------------------------
--- With gender, there is male, female, None and blankspace
+-- 6. With gender, there is male, female, None and blankspace
 SELECT DISTINCT Gender
 FROM bright_learn.default.bright_tv;
 
@@ -112,26 +120,30 @@ SELECT COUNT(*) AS missing_Age
 FROM bright_learn.default.bright_tv
 WHERE Age = 0;
 
--- Update 0 in Age to NULL
+--------------------------------------------------------------------------------
+-- 7. Update 0 in Age to NULL
 UPDATE bright_learn.default.bright_tv
 SET Age = NULL
 WHERE Age = 0;
 
--- With race, there is coloured, black, white, None, indian_asian, other and blankspace
+--------------------------------------------------------------------------------
+-- 8. With race, there is coloured, black, white, None, indian_asian, other and blankspace
 SELECT DISTINCT Race
 FROM bright_learn.default.bright_tv;
 
--- Checking the age range
+--------------------------------------------------------------------------------
+-- 9. Checking the age range
 -- There is a minimum range of 0 to 114
 SELECT MIN(Age) AS Minimum_age,
        MAX(Age) AS Highest_age
 FROM bright_learn.default.bright_tv;
 
--- With province Free State, Gauteng, Mpumalanga, Western Cape, Kwazulu Natal, Northern Cape, None, Eastern Cape, Limpopo, North West, and blankspace
+--------------------------------------------------------------------------------
+-- 10. With province Free State, Gauteng, Mpumalanga, Western Cape, Kwazulu Natal, Northern Cape, None, Eastern Cape, Limpopo, North West, and blankspace
 SELECT DISTINCT Province
 FROM bright_learn.default.bright_tv;
 ------------------------------------------------------------------
---Aggragating everything
+-- 10. Aggragating everything
 SELECT 
       UserID,  
       Name_,
@@ -184,3 +196,4 @@ SELECT
       Dayofmonth(SA_duration_Time) AS day_of_month_for_dur
       
 FROM bright_learn.default.bright_tv;
+--------------------------------------------------------------------------------
