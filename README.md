@@ -20,12 +20,12 @@ Using SQL, I transformed raw data into meaningful insights by performing **data 
 
 ---
 
-## Tools & Skills
+## Tools & Technologies
 
-* **SQL** (data cleaning, transformations, aggregations)
-* Data analysis & customer segmentation
-* Time-series and behavioral analysis
-* Data quality handling (nulls, duplicates, inconsistent formats)
+* **SQL (Databricks)** – Data cleaning and analysis
+* **Excel / Power BI** – Data visualisation and dashboards
+* **Miro** - Project planning (Flowchart and gantt chart)
+* **GitHub** – Project documentation and version control
 
 ---
 
