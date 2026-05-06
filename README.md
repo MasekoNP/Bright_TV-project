@@ -1,8 +1,8 @@
 ---
 
-# ** BrightTV Customer Value Management (CVM) Analysis**
+# BrightTV Customer Value Management (CVM) Analysis
 
-## ** Project Overview**
+## Project Overview
 
 Subscription growth is critical in the streaming industry, and understanding user behavior is key to achieving it. This project analyzes BrightTV’s user profile and viewing data to uncover actionable insights that support **customer acquisition, engagement, and retention strategies**.
 
@@ -10,7 +10,7 @@ Using SQL, I transformed raw data into meaningful insights by performing **data 
 
 ---
 
-## ** Key Objectives**
+## Key Objectives
 
 * Identify **high-potential users** likely to convert to paid subscriptions
 * Segment customers based on **engagement and demographics**
@@ -20,7 +20,7 @@ Using SQL, I transformed raw data into meaningful insights by performing **data 
 
 ---
 
-## ** Tools & Skills**
+## Tools & Skills
 
 * **SQL** (data cleaning, transformations, aggregations)
 * Data analysis & customer segmentation
@@ -29,7 +29,7 @@ Using SQL, I transformed raw data into meaningful insights by performing **data 
 
 ---
 
-## ** Key Insights**
+## Key Insights
 
 * High engagement users (based on viewing activity) present the **strongest conversion opportunity**
 * Weekday viewership is higher than weekends, indicating optimal campaign timing
@@ -38,7 +38,7 @@ Using SQL, I transformed raw data into meaningful insights by performing **data 
 
 ---
 
-## ** Business Impact**
+## Business Impact
 
 This analysis enables BrightTV to:
 
@@ -49,7 +49,7 @@ This analysis enables BrightTV to:
 
 ---
 
-## ** Why This Project Stands Out**
+## Why This Project Stands Out
 
 This project goes beyond basic analysis by linking **user behavior to business outcomes**, demonstrating how data can directly influence **revenue growth and strategic decision-making**.
 
